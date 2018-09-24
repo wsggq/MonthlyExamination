@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/product_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:gravity="center" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_productLogo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@id/product_checkbox" />
+
+    <TextView
+        android:id="@+id/product_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_toLeftOf="@id/jiajianView"
+        android:layout_toRightOf="@id/sdv_productLogo"
+        android:text="商品标题"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_title"
+        android:layout_alignLeft="@id/product_title"
+        android:text="商品价格"
+        android:textSize="16sp" />
+
+    <com.bwie.ggq.monthlyexamination.weight.MyJiaJianView
+        android:id="@+id/jiajianView"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="25dp" />
+</RelativeLayout>
